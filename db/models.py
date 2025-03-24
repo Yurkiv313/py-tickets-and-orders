@@ -86,8 +86,8 @@ class Ticket(models.Model):
         on_delete=models.CASCADE,
         related_name="tickets"
     )
-    row = models.IntegerField()
-    seat = models.IntegerField()
+    row = models.PositiveIntegerField()
+    seat = models.PositiveIntegerField()
 
     class Meta:
         constraints = [
